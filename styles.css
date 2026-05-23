@@ -1,0 +1,254 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #2d2d2d, #1a1a1a);
+}
+
+.header {
+    position: static;
+    background-color: #e10600;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 0 70px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo /*logotipo*/ {
+    position: relative;
+    display: flex;
+    justify-content: baseline;
+    height: 200px;
+    width: 200px;
+}
+
+.header-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.searchbar /*barra de pesquisa*/ {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchbar form {
+    display: flex;
+    align-items: center;
+}
+
+.searchbar input[type=text] /*o input da barra de pesquisa*/ {
+    padding: 12px 15px;
+    width: 300px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    height: 45px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.searchbar input[type=text]::placeholder {
+    color: #999;
+}
+
+.searchbar button /*botão de busca*/ {
+    padding: 0 20px;
+    height: 45px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background: #e10600;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.searchbar button:hover /*botão ao colocar o mouse em cima*/{
+    background: #ff1a1a;
+}
+
+.filter-btn {
+    padding: 12px 20px;
+    height: 45px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    background: #e10600;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+    background: #ff1a1a;
+}
+
+.corp-1 /*container dos cards da 1° fileira horizontal*/{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.corp-2 /*container dos cards da 2° fileira horizontal*/{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.corp-3 /*container dos cards da 3° fileira horizontal*/{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.card /*os cards*/{
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid rgb(163, 163, 163);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover /*card ao colocar o mouse em cima*/{
+    transform: scale(1.05); /*transição para efeito do card aumentar ao colocar o mouse em cima*/
+    transition: .5s ease; /*tempo para completar essa transição*/
+    border: 4px solid red;
+}
+
+.menu /*barra de menu*/{
+    display: flex;
+    gap: 40px;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    padding-bottom: 5px;
+}
+
+.menu-link:hover {
+    color: #ffd700;
+}
+
+.menu-link.active {
+    border-bottom: 3px solid white;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.prev-next-btn {
+    padding: 10px 20px;
+    background-color: #e10600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.prev-next-btn:hover {
+    background-color: #ff1a1a;
+}
+
+.page-info {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.go-to-page {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.go-to-page span {
+    font-size: 14px;
+    color: #333;
+}
+
+.go-to-page input {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.go-btn {
+    padding: 8px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.go-btn:hover {
+    background-color: #555;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
