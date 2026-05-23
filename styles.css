@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
 * {box-sizing: border-box;}
 
 body {
@@ -5,7 +6,7 @@ body {
     background: linear-gradient(to bottom, #2d2d2d, #1a1a1a);
 }
 
-.header {
+.header /*cabeçalho*/{
     position: static;
     background-color: #e10600;
     height: 150px;
@@ -151,15 +152,20 @@ body {
 .menu-link {
     color: white;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
+    font-family: "Bruno Ace", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
     letter-spacing: 1px;
     transition: all 0.3s;
     padding-bottom: 5px;
 }
 
 .menu-link:hover {
-    color: #ffd700;
+    color: #ffffff;
+    background-color: #d10700;
+    padding: 2px;
+    border-radius: 5px;
 }
 
 .menu-link.active {
@@ -190,8 +196,10 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: "Bruno Ace", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 14px;
-    font-weight: bold;
     transition: background-color 0.3s;
 }
 
@@ -201,7 +209,9 @@ body {
 
 .page-info {
     font-size: 16px;
-    font-weight: bold;
+    font-family: "Bruno Ace", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: #333;
 }
 
@@ -221,6 +231,9 @@ body {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: "Bruno Ace", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 14px;
     text-align: center;
 }
@@ -250,5 +263,8 @@ body {
 
 .footer p {
     margin: 0;
+    font-family: "Bruno Ace", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 14px;
 }
