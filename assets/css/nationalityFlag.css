@@ -1,0 +1,74 @@
+.argentina {
+  background: linear-gradient(#75AADB 25%, #ffffff 47%, #75AADB 100%);
+  color: #FFB81C;
+  font-weight: bold;
+}
+
+.dourado_australiano {
+  background-color: #FFCD00;
+}
+
+.azul_neozelandes {
+  background-color: #012169;
+}
+
+.alemanha {
+  background: linear-gradient(#000000 25%, #dd0000 47%, #ffcc00 100%);
+}
+
+.italia {
+  background: linear-gradient(to right, #009246 33%, #f4f9ff 50%, #ce2b37 100%);
+  color: #000000;
+}
+
+.holanda {
+  background-color: #ff8700;
+}
+
+.gra_bretanha {
+  background: linear-gradient(#012169 30%, #C8102E 100%);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.brasil {
+  background: linear-gradient(#009440 40%,#ffcb00 80%);
+  font-weight: bold;
+}
+
+.austria {
+  background: linear-gradient(#ef3340 25%,#ffffff 50%, #ef3340 80%);
+  font-weight: bold;
+  color: #000000;
+}
+
+.americano {
+  background-color: #002147;
+}
+
+.africa-do-sul {
+  background: linear-gradient(150deg, #de3831 10%,#007a4d 30%, #002395 60%, #ffb612 85%, #000000 100%);
+}
+
+.finlandia {
+  background: linear-gradient(#002f6c 40%,#ffffff 60%, #002f6c 70%);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.franca {
+  background: linear-gradient(to right, #0055a4 33%,#ffffff 33%,#ffffff 66%, #ef4135 66%);
+  color: #000000;
+  font-weight: bold;
+}
+
+.canada {
+  background: linear-gradient(to right, #d80621 25%,#ffffff 25%,#ffffff 75%, #d80621 75%);
+  color: #000000;
+  font-weight: bold;
+}
+
+.espanha {
+  background: linear-gradient(#AA151B 25%,#F4EA09 35%, #F4EA09 45%, #AA151B 70%);
+  font-weight: bold;
+}
