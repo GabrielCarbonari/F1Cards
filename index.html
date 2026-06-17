@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/nationalityFlag.css">
     <title>Cards</title>
 </head>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/js/prog.js">
 <body>
     <div class="header">
         <div class="header-left">
@@ -21,44 +25,28 @@
             <a href="#" class="menu-link">SOBRE</a>
         </nav>
         <div class="searchbar">
-            <form action="">
-                <input type="text" placeholder="Buscar piloto..." name="search">
+            <form onsubmit="searchDrivers(event)">
+                <input id="input-search" type="text" placeholder="Buscar piloto..." name="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
             <button class="filter-btn">FILTROS ▼</button>
         </div>
     </div>
-    <div class="corp-1">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-    </div>
-    <div class="corp-2">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-    </div>
-    <div class="corp-3">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-    </div>
+
+    <main class="main">
+        
+    </main>
+    <div class="no-results hidden">Nenhum resultado encontrado :(</div>
 
     <div class="pagination-container">
         <div class="pagination">
-            <button class="prev-next-btn">&lt; Anterior</button>
+            <button class="prev-next-btn" onclick="previousPage()">&lt; Anterior</button>
             <div class="page-info">Página 1 de 40</div>
             <div class="go-to-page">
-                <input type="number" value="1" min="1" max="39">
-                <button class="go-btn">Ir</button>
+                <input disabled type="number" value="1" min="1" max="39">
+                <button disabled class="go-btn">Ir</button>
             </div>
-            <button class="prev-next-btn">Próxima &gt;</button>
+            <button class="prev-next-btn" onclick="nextPage()">Próxima &gt;</button>
         </div>
     </div>
 
@@ -66,4 +54,6 @@
         <p>&copy; F1 CARDS - Criado por Edson, Gabriel e Henrique para o IFRS</p>
     </footer>
 </body>
+<script src="../assets/js/data/driversData.js"></script>
+<script src="./assets/js/cards.js"></script>
 </html>
