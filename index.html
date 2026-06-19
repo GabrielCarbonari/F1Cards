@@ -27,15 +27,30 @@
         <div class="searchbar">
             <form onsubmit="searchDrivers(event)">
                 <input id="input-search" type="text" placeholder="Buscar piloto..." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
+                <button class="d-btn" type="submit"><i class="fa fa-search"></i></button>
             </form>
-            <button class="filter-btn">FILTROS ▼</button>
+            <div class="filter-container">
+                <button class="d-btn filter-btn" onclick="openFilterMenu()">FILTROS ▼</button>
+
+                <div class="filter-menu">
+                    <button class="filter-menu-btn" onclick="applyDriverFilter(titlesDescSort)">Títulos</button>
+                    <button class="filter-menu-btn" onclick="applyDriverFilter(gpsDescSort)">GPs</button>
+                    <button class="filter-menu-btn" onclick="applyDriverFilter(victoriesDescSort)">Vitórias</button>
+                    <button class="filter-menu-btn" onclick="applyDriverFilter(podiumsDescSort)">Pódios</button>
+                    <button class="filter-menu-btn" onclick="applyDriverFilter(polePositionDescSort)">Poles</button>
+                    <button class="filter-menu-btn" onclick="applyDriverFilter(fastestLapDescSort)">Voltas Rápidas</button>
+                </div>
+            </div>
         </div>
     </div>
 
     <main class="main">
         
     </main>
+    <!-- 
+    A div abaixo serve para informar que 
+    a busca por nome não retornou resultado.
+    -->
     <div class="no-results hidden">Nenhum resultado encontrado :(</div>
 
     <div class="pagination-container">

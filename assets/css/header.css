@@ -65,7 +65,7 @@
   color: #999;
 }
 
-.searchbar button /*botão de busca*/ {
+.searchbar .d-btn /*botão de busca*/ {
   padding: 0 20px;
   height: 45px;
   border: none;
@@ -79,7 +79,7 @@
   font-size: 16px;
 }
 
-.searchbar button:hover /*botão ao colocar o mouse em cima*/{
+.searchbar .d-btn:hover /*botão ao colocar o mouse em cima*/{
   background: #ff1a1a;
 }
 
@@ -99,6 +99,32 @@
 
 .filter-btn:hover {
   background: #ff1a1a;
+}
+
+.filter-menu {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+  background-color: white;
+  flex-direction: column;
+}
+
+.filter-menu.open {
+  display: flex;
+}
+
+.filter-menu-btn {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  color: black;
+}
+
+.filter-menu-btn:hover {
+  cursor: pointer;
+  background-color: #ff1a1a;
+  color: white;
+  font-weight: bold;
 }
 
 .menu /*barra de menu*/{

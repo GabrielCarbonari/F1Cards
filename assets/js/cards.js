@@ -117,5 +117,65 @@ function searchDrivers(event) {
   updateScreen();
 }
 
+function openFilterMenu() {
+  const filterMenuElement = document.querySelector('.filter-menu');
+
+  filterMenuElement.classList.toggle("open");
+}
+
+function applyDriverFilter(sortFunction) {
+  cards.sort(sortFunction);
+  pagination = createPaginationObject();
+  updateScreen();
+}
+
+function titlesAscSort(driver1, driver2) {
+  return driver1.titles - driver2.titles;
+}
+
+function titlesDescSort(driver1, driver2) {
+  return driver2.titles - driver1.titles;
+}
+
+function gpsAscSort(driver1, driver2) {
+  return driver1.grandPrix - driver2.grandPrix;
+}
+
+function gpsDescSort(driver1, driver2) {
+  return driver2.grandPrix - driver1.grandPrix;
+}
+
+function podiumsAscSort(driver1, driver2) {
+  return driver1.podiums - driver2.podiums;
+}
+
+function podiumsDescSort(driver1, driver2) {
+  return driver2.podiums - driver1.podiums;
+}
+
+function polePositionAscSort(driver1, driver2) {
+  return driver1.polePosition - driver2.polePosition;
+}
+
+function polePositionDescSort(driver1, driver2) {
+  return driver2.polePosition - driver1.polePosition;
+}
+
+function victoriesAscSort(driver1, driver2) {
+  return driver1.victories - driver2.victories;
+}
+
+function victoriesDescSort(driver1, driver2) {
+  return driver2.victories - driver1.victories;
+}
+
+function fastestLapAscSort(driver1, driver2) {
+  return driver1.fastestLap - driver2.fastestLap;
+}
+
+function fastestLapDescSort(driver1, driver2) {
+  return driver2.fastestLap - driver1.fastestLap;
+}
+
 updateScreen();
 
