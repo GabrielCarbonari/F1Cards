@@ -13,17 +13,23 @@
     <title>Cards</title>
 </head>
 <body>
-    <div class="header">
-        <div class="header-left">
-            <div class="logo"><img src="./assets/images/f1logo.png" alt="Logo do F1 Cards"></div>
-            <div class="header-title">F1 CARDS</div>
+    <header class="header">
+        <div class="header-main">
+            <div class="header-left">
+                <div class="logo"><img src="./assets/images/f1logo.png" alt="Logo do F1 Cards"></div>
+                <div class="header-title">CARDS</div>
+            </div>
+            <nav class="menu">
+                <button class="menu-button fa fa-bars" onclick="openMenu()"></button>
+
+                <div class="menu-list">
+                    <a href="./index.html" class="menu-link">HOME</a>
+                    <a href="./index.html" class="menu-link active">CARDS</a>
+                    <a href="./game/menu.html" class="menu-link">JOGO</a>
+                    <a href="#" class="menu-link">SOBRE</a>
+                </div>
+            </nav>
         </div>
-        <nav class="menu">
-            <a href="./index.html" class="menu-link">HOME</a>
-            <a href="./index.html" class="menu-link active">CARDS</a>
-            <a href="./game/menu.html" class="menu-link">JOGO</a>
-            <a href="#" class="menu-link">SOBRE</a>
-        </nav>
         <div class="searchbar">
             <form onsubmit="searchDrivers(event)">
                 <input id="input-search" type="text" placeholder="Buscar piloto..." name="search">
@@ -42,7 +48,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
     <main class="main">
         
@@ -71,4 +77,5 @@
 </body>
 <script src="../assets/js/data/driversData.js"></script>
 <script src="./assets/js/cards.js"></script>
+<script src="./assets/js/header.js"></script>
 </html>

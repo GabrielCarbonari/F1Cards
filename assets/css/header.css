@@ -1,32 +1,34 @@
 .header /*cabeçalho*/{
   position: static;
   background-color: #e10600;
-  height: 150px;
   width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 0px 60px 10px 60px;
+}
+
+.header-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  padding: 0 70px;
 }
 
 .header-left {
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 
 .logo /*logotipo*/ {
   position: relative;
   display: flex;
   justify-content: baseline;
-  height: 200px;
-  width: 200px;
+  height: 120px;
+  width: 120px;
 }
 
 .header-title {
   color: white;
-  font-size: 24px;
+  font-size: 28px;
+  font-style: italic;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -127,9 +129,13 @@
   font-weight: bold;
 }
 
-.menu /*barra de menu*/{
+.menu-list /*barra de menu*/{
   display: flex;
   gap: 40px;
+}
+
+.menu-button {
+  display: none;
 }
 
 .menu-link {
@@ -138,19 +144,76 @@
   font-family: "Bruno Ace", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
+  font-size: 23px;
   letter-spacing: 1px;
   transition: all 0.3s;
-  padding-bottom: 5px;
+  padding: 5px 5px;
 }
 
 .menu-link:hover {
   color: #ffffff;
-  background-color: #d10700;
-  padding: 2px;
+  background-color: #ff1a1a;
   border-radius: 5px;
 }
 
 .menu-link.active {
   border-bottom: 3px solid white;
+}
+
+@media (max-width: 1024px) {
+  .menu-button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 4px 9px 4px 9px;
+    font-size: 2rem;
+  }
+
+  .menu-button:hover {
+    cursor: pointer;
+    background-color: #ff1a1a;
+    border-radius: 10px;
+  }
+
+  .menu-list.open {
+    display: flex;
+  }
+
+  .menu-list {
+    width: 200px;
+    height: 80vh;
+    background-color: #ffffff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    gap: 0px;
+    z-index: 3;
+  }
+  
+  .menu-link:hover {
+    border-radius: 0px;
+  }
+
+  .menu-link {
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .searchbar input[type=text] /*o input da barra de pesquisa*/ {
+    width: 200px;
+  }
+}
+
+@media (max-width: 520px) {
+  .searchbar input[type=text] /*o input da barra de pesquisa*/ {
+    width: 180px;
+  }
 }
