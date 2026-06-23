@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cards</title>
+  <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/match.css" />
+  <link rel="stylesheet" href="../assets/css/game.css" />
+  <link rel="stylesheet" href="../assets/css/footer.css" />
+  <link rel="stylesheet" href="../assets/css/nationalityFlag.css" />
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-left">
+      <div class="logo"><img src="../assets/images/f1logo.png" alt="Logo do F1 Cards" /></div>
+    </div>
+    <nav class="menu">
+      <a href="../index.html" class="menu-link">HOME</a>
+      <a href="../index.html" class="menu-link">CARDS</a>
+      <a href="./menu.html" class="menu-link active">JOGO</a>
+      <a href="#" class="menu-link">SOBRE</a>
+    </nav>
+    <div class="searchbar">
+    </div>
+    <div class="hamburger-menu" onclick="toggleMobileMenu()">
+      <img src="../assets/images/menuicon.png" alt="Menu">
+    </div>
+  </div>
+  <div class="mobile-menu">
+    <a href="../index.html" class="menu-link">HOME</a>
+    <a href="../index.html" class="menu-link">CARDS</a>
+    <a href="./menu.html" class="menu-link active">JOGO</a>
+    <a href="#" class="menu-link">SOBRE</a>
+  </div>
+
+  <main class="main">
+    <div class="board player">
+
+    </div>
+    <div class="mid-board"></div>
+    <div class="board rival">
+      
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; F1 CARDS - Criado por Edson, Gabriel e Henrique para o IFRS</p>
+  </footer>
+</body>
+<script src="../assets/js/data/driversData.js"></script>
+<script src="../assets/js/match.js"></script>
+<script>
+function toggleMobileMenu() {
+  const mobileMenu = document.querySelector('.mobile-menu');
+  mobileMenu.classList.toggle('open');
+}
+</script>
+</html>

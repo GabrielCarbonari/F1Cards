@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/game.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <title>Cards</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <div class="logo"><img src="../assets/images/f1logo.png"  alt="Logo do F1 Cards"></div>
+        </div>
+        <nav class="menu">
+            <a href="../index.html" class="menu-link">HOME</a>
+            <a href="../index.html" class="menu-link">CARDS</a>
+            <a href="./menu.html" class="menu-link active">JOGO</a>
+            <a href="#" class="menu-link">SOBRE</a>
+        </nav>
+        <div class="searchbar">
+        </div>
+        <div class="hamburger-menu" onclick="toggleMobileMenu()">
+            <img src="../assets/images/menuicon.png" alt="Menu">
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <a href="../index.html" class="menu-link">HOME</a>
+        <a href="../index.html" class="menu-link">CARDS</a>
+        <a href="./menu.html" class="menu-link active">JOGO</a>
+        <a href="#" class="menu-link">SOBRE</a>
+    </div>
+
+    <div class="main">
+        <div class="game-logo">
+            <img src="../assets/images/super-turnfo-img.png" alt="Super Turnfo">
+        </div>
+        <div class="buttons">
+            <a href="./match.html" class="play-button">
+                JOGAR
+            </a>
+            <a href="#" class="default-button">
+                SEU DECK
+            </a>
+            <a href="#" class="default-button">
+                HISTÓRICO
+            </a>
+            <a href="#" class="default-button">
+                LOJA
+            </a>
+            <a href="#" class="default-button">
+                OPÇÕES
+            </a>
+            <a href="./rules.html" class="rules-button">
+                REGRAS
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; F1 CARDS - Criado por Edson, Gabriel e Henrique para o IFRS</p>
+    </footer>
+</body>
+<script>
+function toggleMobileMenu() {
+  const mobileMenu = document.querySelector('.mobile-menu');
+  mobileMenu.classList.toggle('open');
+}
+</script>
+</html>
