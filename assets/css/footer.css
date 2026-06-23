@@ -1,0 +1,14 @@
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-family: "Bruno Ace", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
